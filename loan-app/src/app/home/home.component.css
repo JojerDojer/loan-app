@@ -1,0 +1,17 @@
+.custom-card {
+  margin: auto;
+  width: 80%;
+}
+
+.inputSize {
+  width: 65%;
+}
+
+button {
+  margin: 20px 0px 20px 30px;
+  width: 50%;
+}
+
+.result {
+  font-size: 48px;
+}

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+.bg-ravenclaw-blue {
+  background-color: #222f5b; /* Adjust the color code based on your preferred shade of blue */
+}
+
+.bg-ravenclaw-silver {
+  background-color: #a6a6a6; /* Adjust the color code based on your preferred shade of silver */
+}
+
+.ravenclaw-blue {
+  color: #222f5b; /* Adjust the color code based on your preferred shade of blue */
+}
+
+.ravenclaw-silver {
+  color: #a6a6a6; /* Adjust the color code based on your preferred shade of silver */
+}
+
+.ravenclaw-brown {
+  color: #946b2d;
+}
+
