@@ -1,0 +1,17 @@
+.container {
+  height: 700px;
+  border: 2px solid #946b2d;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+img {
+  height: 350px;
+  width: 375px;
+  border: 1px solid #946b2d;
+  margin-left: 10px;
+}
