@@ -1,21 +1,30 @@
+<!--
+============================================
+; Title: home.component.html
+; Author: John Davidson
+; Data: 16 December 2023
+; Description: Home page
+============================================
+-->
+
 <div class="container">
   <div class="card mt-5 custom-card bg-ravenclaw-silver" >
     <div class="card-title align-self-center mt-4 h2 ravenclaw-brown">Loan Calculator</div>
     <div class="card-body mt-5">
       <div class="row">
         <div class="col-md-6">
-          <form>
+          <form [formGroup]="loanForm" (ngSubmit)="calculateLoan()">
             <div class="mb-4">
               <label for="loanAmount" class="form-label">Loan Amount:</label>
-              <input type="text" id="loanAmount" class="form-control inputSize" placeholder=" ex: $1000">
+              <input type="text" id="loanAmount" class="form-control inputSize" placeholder="1000" formControlName="loanAmount">
             </div>
             <div class="mb-4">
               <label for="interestRate" class="form-label">Interest rate:</label>
-              <input type="text" id="interestRate" class="form-control inputSize" placeholder="ex: 7.25%">
+              <input type="text" id="interestRate" class="form-control inputSize" placeholder="7.25" formControlName="interestRate">
             </div>
             <div class="mb-4">
               <label for="loanPeriod" class="form-label">Loan Period:</label>
-              <input type="text" id="loanPeriod" class="form-control inputSize" placeholder="ex: 12">
+              <input type="text" id="loanPeriod" class="form-control inputSize" placeholder="2" formControlName="loanDuration">
             </div>
             <div>
               <button type="submit" class="btn bg-ravenclaw-blue text-white">Submit</button>
@@ -29,12 +38,12 @@
 
           <div class="mb-4">
             <h5 class="ravenclaw-brown">Monthly Payments:</h5>
-            <div class="result" id="monthlyPayments">$100</div>
+            <div class="result" id="monthlyPayments">{{ monthlyPayment | currency: 'USD':'symbol':'1.2-2' }}</div>
           </div>
 
           <div>
             <h5 class="ravenclaw-brown">Interest Paid:</h5>
-            <div class="result" id="interestPaid">$500</div>
+            <div class="result" id="interestPaid"> {{ totalInterestPaid | currency: 'USD':'symbol':'1.2-2' }}</div>
           </div>
         </div>
 

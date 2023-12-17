@@ -1,6 +1,18 @@
+/*
+============================================
+; Title: home.component.css
+; Author: John Davidson
+; Date: 16 December 2023
+; Description: The styling for Home page.
+============================================
+*/
+
+
 .custom-card {
   margin: auto;
   width: 80%;
+  border: 2px solid #946b2d;
+  border-radius: 10px;
 }
 
 .inputSize {
@@ -16,5 +28,6 @@ button {
   font-size: 48px;
   color: white;
 }
+
 
 

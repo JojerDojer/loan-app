@@ -1,3 +1,10 @@
+/**
+ * Title: about.component.ts
+ * Author: John Davidson
+ * Date: 16 December 2023
+ * Description: About component
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

@@ -1,3 +1,10 @@
+/**
+ * Title: app.component.ts
+ * Author: John Davidson
+ * Date: 16 December 2023
+ * Description: App component
+ */
+
 import { Component } from '@angular/core';
 
 @Component({
